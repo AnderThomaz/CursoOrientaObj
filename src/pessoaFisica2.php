@@ -1,17 +1,19 @@
 <?php 
 
+
+declare(strict_types=1);
 namespace Andersonthomaz\Cursophp;
 
-class PessoaFisica2
+
+
+class PessoaFisica2 extends Pessoa
 {
-    public string $nome;
+    
     public string $age;
     public string $gender; 
+    public string $cpf;
     
-    public function showNome(): void
-    {
-        echo $this->nome . PHP_EOL;
-    }
+
 }
 
 ?>

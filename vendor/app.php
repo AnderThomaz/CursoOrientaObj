@@ -3,6 +3,7 @@
 
 require (__DIR__ . '../autoload.php');
 
+use Andersonthomaz\Cursophp\Pessoa;
 use Andersonthomaz\Cursophp\PessoaFisica2;
 use Andersonthomaz\Cursophp\PessoaJuridica;
 
@@ -11,21 +12,20 @@ $AndersonTh = new PessoaFisica2;
 $AndersonTh->nome = "Anderson";
 $AndersonTh->age = 36;
 $AndersonTh->gender = 'M';
+$AndersonTh->cpf = "05261102871";
 
 
 $mobyou = new PessoaJuridica;
 
 $mobyou->nome = "Thomaz LTDA";
-$mobyou->age = 35;
-$mobyou->gender = "I";
+$mobyou->cnpj = '235226565000011122';
 
-dump($AndersonTh, $mobyou);
-dump($AndersonTh->showNome(), $AndersonTh->showNome());
+dump($mobyou->showNome());
 
-if($mobyou instanceof PessoaFisica2) {
-    dump(var: " è pessoa fisica tbm");
+if($mobyou instanceof Pessoa) {
+    dump(var: " è pessoa tbm");
 } else {
-    dump(var: "Não e pessoa fisica");
+    dump(var: "Não e pessoa ");
 }
 
 
