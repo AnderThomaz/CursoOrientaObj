@@ -3,7 +3,7 @@
         'name' => 'andersonthomaz/cursophp',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '9759d19c29f34a3ca4f306229ad2dbd3017ba03e',
+        'reference' => '1ca364a7089bbaa3a8cbeecb3765342a4f785421',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'andersonthomaz/cursophp' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '9759d19c29f34a3ca4f306229ad2dbd3017ba03e',
+            'reference' => '1ca364a7089bbaa3a8cbeecb3765342a4f785421',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
