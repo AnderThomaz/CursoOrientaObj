@@ -1,21 +1,31 @@
 <?php
 
 
-require (__DIR__.'../autoload.php');
+require (__DIR__ . '../autoload.php');
+
+use Andersonthomaz\Cursophp\PessoaFisica2;
+use Andersonthomaz\Cursophp\PessoaJuridica;
+
+$AndersonTh = new PessoaFisica2;
+
+$AndersonTh->nome = "Anderson";
+$AndersonTh->age = 36;
+$AndersonTh->gender = 'M';
 
 
-use Andersonthomaz\Cursophp\PessoaFisica;
+$mobyou = new PessoaJuridica;
 
+$mobyou->nome = "Thomaz LTDA";
+$mobyou->age = 35;
+$mobyou->gender = "I";
 
-$pessoaFisica = new PessoaFisica();
+dump($AndersonTh, $mobyou);
+dump($AndersonTh->showNome(), $AndersonTh->showNome());
 
-$pessoaFisica->setNome(nome: "Anderson");
-$pessoaFisica->setEmail(email: "anderson.thomaz@gmail.com");
-$pessoaFisica->setPhone(phone: "11958563752");
-$pessoaFisica->setcpf(cpf: "05261102871");
-$pessoaFisica->setAge(age: "18");
+if($mobyou instanceof PessoaFisica2) {
+    dump(var: " è pessoa fisica tbm");
+} else {
+    dump(var: "Não e pessoa fisica");
+}
 
-
-
-var_dump($pessoaFisica);
 

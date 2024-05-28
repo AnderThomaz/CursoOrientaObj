@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'andersonthomaz/cursophp',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '9759d19c29f34a3ca4f306229ad2dbd3017ba03e',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'andersonthomaz/cursophp' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '9759d19c29f34a3ca4f306229ad2dbd3017ba03e',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

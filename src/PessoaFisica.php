@@ -6,36 +6,40 @@ namespace Andersonthomaz\Cursophp;
 
 
 class PessoaFisica {
-        // propriedades e metodos
-        public string $nome;
-        public string $email;
-        public string $phone;
-        public string $cpf; 
-        public int $age;
 
-        public function setNome(string $nome): void
+        const Objetc_type = 'Ser Humano';
+        // propriedades e metodos
+        private string $nome;
+        private static string $email = '';
+        private string $phone;
+        private string $cpf; 
+        private int $age;
+
+        public function __construct(
+           string $nome,
+           string $email,
+           string $phone,
+           string $cpf,
+           int $age
+        )
         {
             $this->nome = $nome;
-        }
-
-        public function setEmail(string $email): void
-        {
-            $this->email = $email;
-        }
-
-        public function setPhone(string $phone): void
-        {
+            self::$email = $email;
             $this->phone = $phone;
-        }
-
-        public function setcpf(string $cpf): void
-        {
             $this->cpf = $cpf;
-        }
-
-        public function setAge(int $age): void
-        {
             $this->age = $age;
         }
-}
 
+        public function setName(string $nome): static
+        {
+            $this->nome = $nome;
+            return $this;
+        }
+
+        public static function getInformation(string $email): string
+        {
+            self::$email = $email;
+            return self::$email . "-" . self::Objetc_type;
+            
+        }
+}
