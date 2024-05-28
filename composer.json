@@ -1,0 +1,19 @@
+{
+    "name": "andersonthomaz/cursophp",
+    "description": "Curso de PHP orientado a objetos",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Andersonthomaz\\Cursophp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anderson Thomaz",
+            "email": "anderson.thomaz@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "symfony/var-dumper": "^7.0"
+    }
+}
